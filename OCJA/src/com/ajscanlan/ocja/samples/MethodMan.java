@@ -2,7 +2,7 @@ package com.ajscanlan.ocja.samples;
 
 public class MethodMan {
 
-	String name = "Clifford Smith";
+	String name = "Cliff Smith";
 	int age = 44;
 	
 	public static void main(String[] args) {
