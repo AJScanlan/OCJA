@@ -13,13 +13,9 @@ public class Person extends Animal{
 		super(name, Person.SOUND);
 	}
 	
-//	public void makeNoise(){
-//		System.out.println(this.name + ": \"AAAAAAAAGGGGGGGHHHHHHHHHH!!\"");
-//	}
-//	
-//	@Override
-//	public String toString(){
-//		return "Name: " + this.name;
-//	}
+	@Override
+	public void sleep() {
+		System.out.println("Person sleeps...");
+	}
 	
 }

@@ -11,24 +11,32 @@ public class InheritApp {
 		//testing person
 		Person alex = new Person("Alex");
 		this.makeSomeNoise(alex);
+		this.moveIt(alex);
+		this.sleep(alex);
 		
 		//testing cat
 		Cat meowth = new Cat("Meowth");
 		this.makeSomeNoise(meowth);
+		this.moveIt(meowth);
+		this.sleep(meowth);
 		
 		//testing dog
 		Dog dog = new Dog("Taz");
 		this.makeSomeNoise(dog);
+		this.moveIt(dog);
+		this.sleep(dog);
 
 		//testing no args
 		Person def = new Person();
 		this.makeSomeNoise(def);
 		this.moveIt(def);
+		this.sleep(def);
 		
 		//testing duck
 		Duck duck = new Duck("Don");
 		this.makeSomeNoise(duck);
 		this.moveIt(duck);
+		this.sleep(duck);
 		
 	}
 
@@ -40,13 +48,8 @@ public class InheritApp {
 		a.move();
 	}
 	
-	//deprecated methods
-//	private void makeSomeNoiseCats(Cat c){
-//		c.makeNoise();
-//	}
-//	
-//	private void makeSomeNoiseDogs(Dog d){
-//		d.makeNoise();
-//	}
+	private void sleep(Animal a){
+		a.sleep();
+	}
 	
 }

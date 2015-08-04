@@ -11,4 +11,9 @@ public class Duck extends Animal{
 		super(name, Duck.SOUND);
 	}
 
+	@Override
+	public void sleep() {
+		System.out.println("Duck sleeps...");
+	}
+	
 }

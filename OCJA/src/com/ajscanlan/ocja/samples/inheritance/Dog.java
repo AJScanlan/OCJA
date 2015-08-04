@@ -2,7 +2,6 @@ package com.ajscanlan.ocja.samples.inheritance;
 
 public class Dog extends Animal{
 
-//	private String name;
 	private static final String SOUND = "Woof";
 	
 	public Dog(){
@@ -13,12 +12,8 @@ public class Dog extends Animal{
 		super(name, Dog.SOUND);
 	}
 	
-//	public void makeNoise(){
-//		System.out.println(this.name + ": \"Woof\"");
-//	}
-//	
-//	@Override
-//	public String toString(){
-//		return "Name: " + this.name;
-//	}
+	@Override
+	public void sleep() {
+		System.out.println("Dog sleeps...");
+	}
 }

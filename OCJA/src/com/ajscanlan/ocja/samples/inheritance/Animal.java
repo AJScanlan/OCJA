@@ -13,6 +13,8 @@ public abstract class Animal {
 		this.sound = sound;
 	}
 	
+	abstract public void sleep();
+	
 	public void makeNoise(){
 		System.out.println(this.name + ": \"" + sound + "\"");
 	}
