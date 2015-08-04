@@ -17,6 +17,11 @@ public abstract class Animal {
 		System.out.println(this.name + ": \"" + sound + "\"");
 	}
 	
+	public void move(){
+		System.out.println(this.name + " is moving...");
+	}
+	
+	
 	@Override
 	public String toString(){
 		return "Name: " + this.name;

@@ -23,16 +23,22 @@ public class InheritApp {
 		//testing no args
 		Person def = new Person();
 		this.makeSomeNoise(def);
+		this.moveIt(def);
 		
-		//testing dog
+		//testing duck
 		Duck duck = new Duck("Don");
 		this.makeSomeNoise(duck);
+		this.moveIt(duck);
+		
 	}
 
 	private void makeSomeNoise(Animal a) {
 		a.makeNoise();
 	}
 
+	private void moveIt(Animal a){
+		a.move();
+	}
 	
 	//deprecated methods
 //	private void makeSomeNoiseCats(Cat c){
@@ -42,4 +48,5 @@ public class InheritApp {
 //	private void makeSomeNoiseDogs(Dog d){
 //		d.makeNoise();
 //	}
+	
 }
