@@ -10,20 +10,31 @@ public class InheritApp {
 		
 		Person alex = new Person("Alex");
 		
-		makeSomeNoisePeople(alex);
+		this.makeSomeNoise(alex);
 		
 		Cat meowth = new Cat("Meowth");
 		
-		this.makeSomeNoiseCats(meowth);
+		this.makeSomeNoise(meowth);
+		
+		Dog dog = new Dog("Taz");
+		
+		this.makeSomeNoise(dog);
+		
+		Person def = new Person();
+		
+		this.makeSomeNoise(def);
 		
 	}
 
-	private void makeSomeNoisePeople(Person p) {
-		p.makeNoise();
+	private void makeSomeNoise(Animal a) {
+		a.makeNoise();
 	}
 
-	private void makeSomeNoiseCats(Cat c){
-		c.makeNoise();
-	}
-	
+//	private void makeSomeNoiseCats(Cat c){
+//		c.makeNoise();
+//	}
+//	
+//	private void makeSomeNoiseDogs(Dog d){
+//		d.makeNoise();
+//	}
 }

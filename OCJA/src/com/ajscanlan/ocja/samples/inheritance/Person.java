@@ -1,20 +1,25 @@
 package com.ajscanlan.ocja.samples.inheritance;
 
-public class Person {
+public class Person extends Animal{
 	
-	private String name;
+	//private String name;
+	private static final String SOUND = "AAAAAAAAGGGGGGGHHHHHHHHHH!!";
+	
+	public Person(){
+		super();
+	}
 	
 	public Person(String name){
-		this.name = name;
+		super(name, Person.SOUND);
 	}
 	
-	public void makeNoise(){
-		System.out.println(this.name + ": \"AAAAAAAAGGGGGGGHHHHHHHHHH!!\"");
-	}
-	
-	@Override
-	public String toString(){
-		return "Name: " + this.name;
-	}
+//	public void makeNoise(){
+//		System.out.println(this.name + ": \"AAAAAAAAGGGGGGGHHHHHHHHHH!!\"");
+//	}
+//	
+//	@Override
+//	public String toString(){
+//		return "Name: " + this.name;
+//	}
 	
 }
