@@ -24,6 +24,9 @@ public class InheritApp {
 		
 		this.makeSomeNoise(def);
 		
+		Duck duck = new Duck("Don");
+		
+		this.makeSomeNoise(duck);
 	}
 
 	private void makeSomeNoise(Animal a) {
