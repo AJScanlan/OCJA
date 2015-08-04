@@ -1,15 +1,15 @@
 package com.ajscanlan.ocja.samples.inheritance;
 
-public class Person {
-	
+public class Cat {
+
 	private String name;
 	
-	public Person(String name){
+	public Cat(String name){
 		this.name = name;
 	}
 	
 	public void makeNoise(){
-		System.out.println(this.name + ": \"AAAAAAAAGGGGGGGHHHHHHHHHH!!\"");
+		System.out.println(this.name + ": \"Meowth\"");
 	}
 	
 	@Override
