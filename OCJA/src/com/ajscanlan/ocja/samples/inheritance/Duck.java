@@ -16,4 +16,10 @@ public class Duck extends Animal{
 		System.out.println("Duck sleeps...");
 	}
 	
+	@Override
+	public void spawn() {
+		// TODO Auto-generated method stub
+		System.out.println("Duck respawned");
+	}
+	
 }

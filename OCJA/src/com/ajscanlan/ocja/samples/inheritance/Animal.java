@@ -1,6 +1,6 @@
 package com.ajscanlan.ocja.samples.inheritance;
 
-public abstract class Animal {
+public abstract class Animal implements Spawnable{
 	private String name;
 	private String sound;
 	

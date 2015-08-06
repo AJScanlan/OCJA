@@ -14,13 +14,13 @@ public class ArrayException {
 
 	private void printStuff() {
 		// TODO Auto-generated method stub
-		for(int i = 0; i < arr.length; ++i){
-		//	try{
-				System.out.println(arr[i]);
-//			} catch (ArrayIndexOutOfBoundsException e){
-//				break;
-//			}
-		}
+//		for(int i = 0; i < arr.length; ++i){
+//		//	try{
+//				System.out.println(arr[i]);
+////			} catch (ArrayIndexOutOfBoundsException e){
+////				break;
+////			}
+//		}
 		
 		long endTime = System.currentTimeMillis();
 		System.out.println(endTime - startTime);
@@ -29,12 +29,13 @@ public class ArrayException {
 	private void doStuff() {
 		// TODO Auto-generated method stub
 
-		for(int i = 0; i < arr.length; ++i){
-		//	try{
+		for(int i = 0;; ++i){
+			try{
 				arr[i] = i;
-//			} catch (ArrayIndexOutOfBoundsException e){
-//				break;
-//			}
+			//	System.out.println(arr[i]);
+			} catch (ArrayIndexOutOfBoundsException e){
+				break;
+			}
 		}
 	}
 

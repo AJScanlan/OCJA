@@ -16,6 +16,12 @@ public class Cat extends Animal{
 	public void sleep() {
 		System.out.println("Cat sleeps...");
 	}
+
+	@Override
+	public void spawn() {
+		// TODO Auto-generated method stub
+		System.out.println("Cat respawned");
+	}
 	
 	
 }
